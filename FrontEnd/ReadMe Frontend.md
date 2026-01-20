@@ -95,7 +95,7 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:3001
 # Optional: Analytics, monitoring
 NEXT_PUBLIC_ANALYTICS_ID=
 ```
-
+FIGMA[link](https://www.figma.com/design/wKinSiQpRv6TDfD3u5lCL7/OneQuestEarn-stellar_Earn?node-id=0-1&p=f&t=7ralfeRlDUA6Mrtz-0)
 ### Development
 
 ```bash
@@ -305,6 +305,7 @@ pnpm build
 - Verify `NEXT_PUBLIC_CONTRACT_ID` is correct
 - Ensure contract is deployed to the specified network
 - Check Soroban RPC URL connectivity
+FIGMA[link](https://www.figma.com/design/wKinSiQpRv6TDfD3u5lCL7/OneQuestEarn-stellar_Earn?node-id=0-1&p=f&t=7ralfeRlDUA6Mrtz-0)
 
 ## Resources
 
