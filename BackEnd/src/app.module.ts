@@ -4,6 +4,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { WebhooksModule } from './modules/webhooks/webhooks.module';
+
+@Module({
+  imports: [WebhooksModule],
 import { AuthModule } from './modules/auth/auth.module';
 import { RefreshToken } from './modules/auth/entities/refresh-token.entity';
 import { QuestsModule } from './modules/quests/quests.module';
