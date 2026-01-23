@@ -4,10 +4,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { WebhooksModule } from './modules/webhooks/webhooks.module';
-
-@Module({
-  imports: [WebhooksModule],
 import { AuthModule } from './modules/auth/auth.module';
 import { AnalyticsModule } from './modules/analytics/analytics.module';
 import { RefreshToken } from './modules/auth/entities/refresh-token.entity';
@@ -16,7 +12,9 @@ import { Quest } from './modules/analytics/entities/quest.entity';
 import { Submission } from './modules/analytics/entities/submission.entity';
 import { Payout } from './modules/analytics/entities/payout.entity';
 import { AnalyticsSnapshot } from './modules/analytics/entities/analytics-snapshot.entity';
+
 import { QuestsModule } from './modules/quests/quests.module';
+import { RefreshToken } from './modules/auth/entities/refresh-token.entity';
 import { Quest } from './modules/quests/entities/quest.entity';
 
 @Module({
@@ -61,5 +59,4 @@ import { Quest } from './modules/quests/entities/quest.entity';
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
-
+export class AppModule {}
